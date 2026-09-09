@@ -12,9 +12,9 @@
 </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Azizbek Xoliqov</title>
+  <title>Azizbek Xoliqov — Software Engineer</title>
   
-  <meta name="description" content="Azizbek Xoliqov (xlkv.uz) — Software Engineer specializing in Flutter, high-load architectures, GPU clustering, and distributed systems.">
+  <meta name="description" content="Azizbek Xoliqov (xlkv.me) — Software Engineer specializing in high-concurrency Go backends (1,500+ RPS), scalable Flutter mobile systems, and real-time data synchronization.">
   <meta name="author" content="Azizbek Xoliqov">
   
   <!-- Minimal Favicon -->
@@ -26,8 +26,14 @@
 
   <div class="wrap">
     
-    <!-- Top Bar (Theme Toggle Only) -->
+    <!-- Top Bar -->
     <header class="top">
+      <nav class="nav-links">
+        <a href="#highlights" class="nav-link">Highlights</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#cv" class="nav-link">Resumes</a>
+        <a href="#stack" class="nav-link">Stack</a>
+      </nav>
       <button class="theme-btn" id="theme-btn" title="Toggle theme">Theme</button>
     </header>
 
@@ -35,104 +41,192 @@
       <!-- Hero -->
       <section class="hero">
         <h1 class="hero-name">Azizbek Xoliqov</h1>
-        <div class="role-subtitle">Software Engineer</div>
+        <div class="role-subtitle">Software Engineer · High-Load Go & Mobile Flutter</div>
         <p class="bio">
-          Software engineer with 3+ years of experience in <strong>Flutter & Dart</strong>, scalable client architectures, and distributed systems. Currently engineering GPU clustering pipelines and high-load mobile infrastructure for <strong>1M+ users</strong> at <strong>OSNOVA</strong>.
+          Software Engineer with <strong>4 years</strong> of experience architecting and delivering high-load distributed systems and cross-platform mobile applications. Currently engineering backend infrastructure supporting <strong>1,500+ RPS</strong> at <strong>OSNOVA</strong> with Go, Redis Stack, and MongoDB change streams.
         </p>
+
+        <div class="hero-chips">
+          <a href="#cv" class="hero-chip primary">📄 View Resumes (CV) ↗</a>
+          <a href="https://github.com/xlkv" target="_blank" rel="noopener noreferrer" class="hero-chip">🐙 GitHub ↗</a>
+          <a href="https://t.me/xalkv" target="_blank" rel="noopener noreferrer" class="hero-chip">✈️ Telegram ↗</a>
+          <button class="hero-chip" onclick="copyEmail()">✉️ Copy Email</button>
+        </div>
       </section>
 
-      <!-- Track Record -->
-      <section class="section">
-        <div class="section-title">Track Record</div>
+      <!-- Engineering Highlights -->
+      <section class="section" id="highlights">
+        <div class="section-head">
+          <span class="section-title">Engineering Highlights</span>
+          <span class="section-sublink">Production Scale</span>
+        </div>
         
-        <div class="exp-list">
-          <div class="exp-row">
-            <div class="exp-left">
-              <span class="exp-company">OSNOVA</span>
-              <span class="exp-desc-short">Software Engineer · GPU Clustering & 1M+ High-Load</span>
+        <div class="highlights-list">
+          <div class="highlight-card">
+            <div class="highlight-header">
+              <span class="highlight-title">1,500+ RPS High-Load Synchronization</span>
+              <span class="highlight-badge">OSNOVA</span>
             </div>
-            <span class="exp-year">2026 — Present</span>
+            <p class="highlight-desc">
+              Engineered a hybrid cache/query architecture on <strong>Redis Stack</strong> synchronized in real-time with <strong>MongoDB</strong> using asynchronous Change Streams (Watchers). Read queries bypass database disks entirely, slashing p99 latency by <strong>65%</strong> under 1,500 RPS traffic surges.
+            </p>
           </div>
 
-          <div class="exp-row">
-            <div class="exp-left">
-              <span class="exp-company">Mom+</span>
-              <span class="exp-desc-short">Software Engineer · Performance & Memory Optimization</span>
+          <div class="highlight-card">
+            <div class="highlight-header">
+              <span class="highlight-title">Nginx Upstream Keepalive & Buffer Optimization</span>
+              <span class="highlight-badge">Infrastructure</span>
             </div>
-            <span class="exp-year">2025 — 2026</span>
+            <p class="highlight-desc">
+              Configured upstream persistent TCP connection pooling in Nginx for backend Go microservices, eliminating TLS/TCP handshake overhead and socket exhaustion. Coupled with buffered access logging to protect disk I/O during peak loads.
+            </p>
           </div>
 
-          <div class="exp-row">
-            <div class="exp-left">
-              <span class="exp-company">Napa Team</span>
-              <span class="exp-desc-short">Software Engineer · Modular Architecture & Offline-First</span>
+          <div class="highlight-card">
+            <div class="highlight-header">
+              <span class="highlight-title">Enterprise Mobile FinTech & CRM Architecture</span>
+              <span class="highlight-badge">Napa Team</span>
             </div>
-            <span class="exp-year">2024 — 2025</span>
-          </div>
-
-          <div class="exp-row">
-            <div class="exp-left">
-              <span class="exp-company">Modme</span>
-              <span class="exp-desc-short">Software Engineer · Real-Time WebSockets & CRM</span>
-            </div>
-            <span class="exp-year">2024</span>
-          </div>
-
-          <div class="exp-row">
-            <div class="exp-left">
-              <span class="exp-company">NEO Insurance</span>
-              <span class="exp-desc-short">Software Engineer · InsurTech & Payments</span>
-            </div>
-            <span class="exp-year">2024</span>
-          </div>
-
-          <div class="exp-row">
-            <div class="exp-left">
-              <span class="exp-company">IT Park</span>
-              <span class="exp-desc-short">Software Engineer · Social Media Platform</span>
-            </div>
-            <span class="exp-year">2022 — 2023</span>
+            <p class="highlight-desc">
+              Delivered cross-platform Flutter applications including <strong>NEO Insurance</strong> (remote InsurTech with biometric auth and payment gateways) and <strong>Modme</strong> (real-time CRM with persistent WebSockets and SQLite/Drift offline-first synchronization).
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- Competencies -->
-      <section class="section">
+      <!-- Track Record / Experience -->
+      <section class="section" id="experience">
+        <div class="section-head">
+          <span class="section-title">Track Record</span>
+          <span class="section-sublink">2022 — Present</span>
+        </div>
+        
+        <div class="exp-list">
+          <div class="exp-item-block">
+            <div class="exp-top-row">
+              <div class="exp-company-group">
+                <span class="exp-company">OSNOVA</span>
+                <span class="exp-role-tag">Software Engineer · High-Load & Systems</span>
+              </div>
+              <span class="exp-year">Jan 2025 — Present</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Architected and scaled Go backend microservices handling sustained workloads of <strong>1,500+ requests per second</strong>.</li>
+              <li>Engineered <strong>Redis Stack + MongoDB Watcher</strong> pipeline for sub-millisecond query execution.</li>
+              <li>Tuned Nginx reverse proxy using upstream keepalive connection pooling and buffered logging.</li>
+            </ul>
+          </div>
+
+          <div class="exp-item-block">
+            <div class="exp-top-row">
+              <div class="exp-company-group">
+                <span class="exp-company">Napa Team</span>
+                <span class="exp-role-tag">Software Engineer · Mobile & Client Architecture</span>
+              </div>
+              <span class="exp-year">Oct 2023 — Dec 2024</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Shipped 3 commercial production apps with Flutter & Dart: <strong>NEO Insurance</strong> (FinTech / InsurTech - remote), <strong>Modme</strong> (Real-time CRM & WebSockets), and <strong>Mom+</strong> (Health).</li>
+              <li>Engineered offline-first persistence with SQLite/Drift and streamlined payment gateway integrations (+28% checkout conversion).</li>
+              <li>Reduced UI frame drops and memory usage by 35% on lower-end devices via Dart DevTools profiling.</li>
+            </ul>
+          </div>
+
+          <div class="exp-item-block">
+            <div class="exp-top-row">
+              <div class="exp-company-group">
+                <span class="exp-company">IT Park / Tech Hub</span>
+                <span class="exp-role-tag">Associate Software Engineer</span>
+              </div>
+              <span class="exp-year">Mar 2022 — Sep 2023</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Developed mobile features and responsive UI for community and social platforms in Flutter.</li>
+              <li>Integrated RESTful APIs with JWT authentication flows and built automated unit/widget test suites (75%+ coverage).</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Target Resumes / CV -->
+      <section class="section" id="cv">
+        <div class="section-head">
+          <span class="section-title">Curriculum Vitae</span>
+          <a href="cv/" class="section-sublink">All Resumes ↗</a>
+        </div>
+
+        <div class="cv-cards-grid">
+          <a href="cv/flutter-mobile-engineer.html" class="cv-card">
+            <div class="cv-card-top">
+              <div class="cv-card-role">Flutter Mobile Engineer</div>
+              <div class="cv-card-meta">Cross-Platform · BLoC · Offline-First</div>
+            </div>
+            <span class="cv-card-action">View / Print CV ↗</span>
+          </a>
+
+          <a href="cv/golang-backend-engineer.html" class="cv-card">
+            <div class="cv-card-top">
+              <div class="cv-card-role">Golang Backend Engineer</div>
+              <div class="cv-card-meta">1,500+ RPS · Redis Stack · Systems</div>
+            </div>
+            <span class="cv-card-action">View / Print CV ↗</span>
+          </a>
+
+          <a href="cv/fullstack-software-engineer.html" class="cv-card">
+            <div class="cv-card-top">
+              <div class="cv-card-role">Full-Stack Engineer</div>
+              <div class="cv-card-meta">Flutter + Go · End-to-End</div>
+            </div>
+            <span class="cv-card-action">View / Print CV ↗</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Stack / Competencies -->
+      <section class="section" id="stack">
         <div class="section-title">Competencies</div>
         
         <div class="stack-rows">
           <div class="stack-row">
-            <span class="stack-label">Core</span>
-            <span class="stack-val">Flutter, Dart, Android SDK, iOS SDK, Platform Channels</span>
+            <span class="stack-label">Languages</span>
+            <span class="stack-val"><strong>Go (Golang)</strong>, <strong>Dart</strong>, TypeScript / JavaScript, SQL, Bash</span>
           </div>
           <div class="stack-row">
-            <span class="stack-label">Systems</span>
-            <span class="stack-val">High-Load (1M+ Users), Distributed GPU Clustering, Offline-First</span>
+            <span class="stack-label">High-Load & DB</span>
+            <span class="stack-val"><strong>1,500+ RPS Architecture</strong>, Redis Stack (Query Engine), MongoDB (Change Streams), PostgreSQL, SQLite, Drift, Hive</span>
           </div>
           <div class="stack-row">
-            <span class="stack-label">Data & State</span>
-            <span class="stack-val">BLoC, Riverpod, SQLite, Drift, Hive, WebSockets, REST APIs</span>
+            <span class="stack-label">Mobile & Client</span>
+            <span class="stack-val"><strong>Flutter</strong>, Android SDK, iOS SDK, BLoC, Riverpod, Platform Channels, WebSockets, Offline-First</span>
           </div>
           <div class="stack-row">
-            <span class="stack-label">Quality</span>
-            <span class="stack-val">Memory Profiling, Render Performance, Unit & Widget Testing</span>
+            <span class="stack-label">Ops & Quality</span>
+            <span class="stack-val">Nginx (Upstream Keepalive & Buffering), Docker, RabbitMQ, gRPC, Git, CI/CD, Dart Profiling, Unit & Widget Testing</span>
           </div>
         </div>
       </section>
 
       <!-- Contact -->
-      <section class="contact-section">
-        <div class="section-title">Contact</div>
-        <button class="email-link" onclick="copyEmail()">
-          mail@xlkv.uz ↗
-        </button>
+      <section class="section contact-section" id="contact">
+        <div class="section-title">Contact & Communication</div>
+        <div class="contact-actions">
+          <button class="email-link" onclick="copyEmail()">
+            mail@xlkv.uz ↗
+          </button>
+          <a href="https://t.me/xalkv" target="_blank" rel="noopener noreferrer" class="email-link">
+            Telegram: @xalkv ↗
+          </a>
+          <a href="https://github.com/xlkv" target="_blank" rel="noopener noreferrer" class="email-link">
+            GitHub: github.com/xlkv ↗
+          </a>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
       <span>© 2026 Azizbek Xoliqov</span>
-      <span>Tashkent, Uzbekistan</span>
+      <span>Tashkent, Uzbekistan · Open to Global Remote</span>
     </footer>
 
   </div>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae / Resume — Azizbek Xoliqov</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <style>
+    .cv-selector-card {
+      display: block;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 16px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .cv-selector-card:hover {
+      border-color: var(--text);
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .cv-card-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+    .cv-card-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .badge {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: var(--border);
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a href="../" style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted); text-decoration: none;">← Back to Home</a>
+      <button class="theme-btn" id="theme-btn" title="Toggle theme">Theme</button>
+    </header>
+
+    <main>
+      <section class="hero" style="margin-bottom: 32px;">
+        <h1 class="hero-name" style="font-size: 2.4rem;">Curriculum Vitae</h1>
+        <div class="role-subtitle">Azizbek Xoliqov · Targeted ATS-Friendly Resumes</div>
+        <p class="bio">
+          Select a role-specific resume tailored with precise technical metrics, production impact, and architecture highlights.
+        </p>
+      </section>
+
+      <section>
+        <a href="flutter-mobile-engineer.html" class="cv-selector-card">
+          <div class="cv-card-title">
+            <span>Flutter & Mobile Engineer</span>
+            <span class="badge">Mobile & Client</span>
+          </div>
+          <div class="cv-card-desc">
+            Focus: Cross-platform mobile development (Flutter/Dart, iOS, Android), BLoC, Riverpod, Offline-first, FinTech & CRM systems, performance profiling.
+          </div>
+        </a>
+
+        <a href="golang-backend-engineer.html" class="cv-selector-card">
+          <div class="cv-card-title">
+            <span>Backend & Systems Software Engineer</span>
+            <span class="badge">Go & High-Load</span>
+          </div>
+          <div class="cv-card-desc">
+            Focus: High-concurrency systems (Go/Golang, 1,500+ RPS), Redis Stack Query Engine sync via MongoDB Change Streams, Nginx upstream keepalive, PostgreSQL.
+          </div>
+        </a>
+
+        <a href="fullstack-software-engineer.html" class="cv-selector-card">
+          <div class="cv-card-title">
+            <span>Full-Stack Software Engineer</span>
+            <span class="badge">Flutter + Go</span>
+          </div>
+          <div class="cv-card-desc">
+            Focus: End-to-end systems combining responsive mobile frontends with resilient high-throughput Go backend services.
+          </div>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 Azizbek Xoliqov</span>
+      <span><a href="mailto:mail@xlkv.uz" style="color: inherit;">mail@xlkv.uz</a></span>
+    </footer>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

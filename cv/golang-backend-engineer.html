@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azizbek Xoliqov — Backend & Systems Software Engineer (Go / Golang)</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm 14mm 12mm 14mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1a1a1a;
+      background: #ffffff;
+      font-size: 11pt;
+      line-height: 1.42;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 24px 32px;
+    }
+    @media print {
+      .container {
+        padding: 0;
+        max-width: 100%;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+    /* Action Bar */
+    .action-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f4f5f7;
+      padding: 10px 18px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #e2e8f0;
+    }
+    .action-btn {
+      background: #0f172a;
+      color: #ffffff;
+      border: none;
+      padding: 7px 15px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .action-btn:hover {
+      background: #334155;
+    }
+    .home-link {
+      font-size: 12px;
+      color: #475569;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .home-link:hover {
+      text-decoration: underline;
+    }
+    /* Header */
+    .header {
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+    .name {
+      font-size: 24pt;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #0f172a;
+      line-height: 1.1;
+    }
+    .title {
+      font-size: 13pt;
+      font-weight: 600;
+      color: #0d9488;
+      margin-top: 3px;
+    }
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 18px;
+      margin-top: 8px;
+      font-size: 9.5pt;
+      color: #475569;
+    }
+    .contact-bar a {
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-bar a:hover {
+      text-decoration: underline;
+    }
+    /* Section */
+    .section {
+      margin-bottom: 14px;
+      page-break-inside: avoid;
+    }
+    .section-title {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+    /* Summary */
+    .summary-text {
+      font-size: 9.8pt;
+      color: #334155;
+      line-height: 1.45;
+      text-align: justify;
+    }
+    /* Experience Item */
+    .exp-item {
+      margin-bottom: 11px;
+      page-break-inside: avoid;
+    }
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .exp-role {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .exp-date {
+      font-size: 9.5pt;
+      font-weight: 600;
+      color: #475569;
+      white-space: nowrap;
+    }
+    .exp-sub {
+      display: flex;
+      justify-content: space-between;
+      font-size: 9.5pt;
+      color: #0d9488;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    .exp-location {
+      color: #64748b;
+      font-weight: 400;
+    }
+    .bullets {
+      margin-left: 18px;
+      font-size: 9.4pt;
+      color: #334155;
+      line-height: 1.42;
+    }
+    .bullets li {
+      margin-bottom: 3.5px;
+    }
+    .bullets strong {
+      color: #0f172a;
+    }
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 5px 12px;
+      font-size: 9.4pt;
+    }
+    .skill-category {
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .skill-values {
+      color: #334155;
+    }
+    /* Education & Langs */
+    .dual-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .simple-item {
+      font-size: 9.4pt;
+      line-height: 1.4;
+      color: #334155;
+    }
+    .simple-title {
+      font-weight: 700;
+      color: #0f172a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="action-bar no-print">
+      <a href="../" class="home-link">← Back to xlkv.me</a>
+      <span>📄 <strong>ATS-Friendly Resume</strong> · Golang & Systems Focus</span>
+      <div>
+        <button class="action-btn" onclick="window.print()">Print / Save as PDF</button>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="name">Azizbek Xoliqov</div>
+      <div class="title">Backend & Systems Software Engineer (Go / Golang)</div>
+      <div class="contact-bar">
+        <span>📍 Tashkent, Uzbekistan (Open to Remote / Relocation)</span>
+        <span>📞 <a href="tel:+998700100076">+998 (70) 0100076</a></span>
+        <span>✉️ <a href="mailto:mail@xlkv.uz">mail@xlkv.uz</a></span>
+        <span>🌐 <a href="https://xlkv.me" target="_blank">xlkv.me</a></span>
+        <span>🐙 <a href="https://github.com/xlkv" target="_blank">github.com/xlkv</a></span>
+        <span>✈️ <a href="https://t.me/xalkv" target="_blank">@xalkv</a></span>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="section">
+      <div class="section-title">Professional Summary</div>
+      <p class="summary-text">
+        Backend and Systems Software Engineer with <strong>4 years</strong> of experience specializing in building and scaling resilient, concurrent microservices in <strong>Go (Golang)</strong>. Proven track record supporting high-load production architectures sustaining <strong>1,500+ requests per second (RPS)</strong>. Deep expertise in data-tier optimization (<strong>Redis Stack Query Engine, MongoDB Change Streams, PostgreSQL</strong>), network layer performance (<strong>Nginx upstream keepalive connection pooling</strong>, socket reuse, buffered logging), and asynchronous messaging (RabbitMQ). Strong foundational knowledge of concurrent patterns (goroutines, channels, worker pools) and clean service boundaries. Fluent in English (B2).
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="section">
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-grid">
+        <div class="skill-category">Languages:</div>
+        <div class="skill-values">Go (Golang), SQL, Dart, Python, Bash / Shell Scripting</div>
+
+        <div class="skill-category">Backend & Concurrency:</div>
+        <div class="skill-values">Clean Architecture, DDD, Worker Pools, Context & Cancellation, Goroutines, Channels, gRPC, Protobuf, REST APIs, WebSockets</div>
+
+        <div class="skill-category">Databases & Caching:</div>
+        <div class="skill-values">Redis Stack (Query Engine & Secondary Indexing), MongoDB (Change Streams / Watchers), PostgreSQL, Index Profiling, Transaction Management</div>
+
+        <div class="skill-category">Infrastructure & Ops:</div>
+        <div class="skill-values">Nginx (Upstream Keepalive Pooling, Buffer Logging), Docker, Docker Compose, RabbitMQ, Grafana, Linux System Administration, Git, CI/CD</div>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section class="section">
+      <div class="section-title">Professional Experience</div>
+
+      <!-- OSNOVA -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Software Engineer (Backend & High-Load Infrastructure)</span>
+          <span class="exp-date">Jan 2025 — Present</span>
+        </div>
+        <div class="exp-sub">
+          <span>OSNOVA · EdTech & High-Concurrency Systems</span>
+          <span class="exp-location">Tashkent, Uzbekistan</span>
+        </div>
+        <ul class="bullets">
+          <li>Architected and optimized high-performance backend microservices in <strong>Go (Golang)</strong> capable of handling sustained workloads of <strong>1,500+ RPS</strong> with p99 response times below 45ms.</li>
+          <li>Designed an innovative read-heavy data architecture using <strong>Redis Stack Query Engine</strong>: queries execute directly against in-memory indexed structures, reducing primary database read load by <strong>70%</strong>.</li>
+          <li>Engineered an automated real-time synchronization engine via <strong>MongoDB Change Streams (Watchers)</strong> that listens to write, update, and delete events and reliably updates Redis Stack with &lt;10ms replication delay.</li>
+          <li>Optimized reverse proxy layer by implementing <strong>Nginx upstream keepalive connection pooling</strong>, reusing persistent TCP connections to backend Go instances, eliminating socket exhaustion and cutting connection overhead by <strong>40%</strong>.</li>
+          <li>Configured <strong>Nginx buffered access logging</strong>, preventing disk I/O write starvation during peak traffic surges of 1,500+ RPS.</li>
+          <li>Integrated <strong>RabbitMQ</strong> message queues for decoupling heavy background tasks (media transcoding, analytics ingestion), preventing request timeouts.</li>
+        </ul>
+      </div>
+
+      <!-- Napa Team -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Software Engineer (Backend & Client Integration)</span>
+          <span class="exp-date">Oct 2023 — Dec 2024</span>
+        </div>
+        <div class="exp-sub">
+          <span>Napa Team (IT Solutions & Software Agency)</span>
+          <span class="exp-location">Tashkent, Uzbekistan</span>
+        </div>
+        <ul class="bullets">
+          <li>Designed and maintained RESTful backend APIs, WebSocket gateways, and database schemas across FinTech, EdTech, and enterprise domains.</li>
+          <li><strong>NEO Insurance (InsurTech - Remote):</strong> Built secure payment callback processors and transaction verification endpoints adhering to strict idempotency rules, processing over $500K+ in digital insurance premiums without financial discrepancies.</li>
+          <li><strong>Modme (Educational CRM):</strong> Developed high-throughput <strong>WebSocket</strong> server-side event handlers for real-time messaging, attendance tracking, and live notifications across thousands of concurrent active student sessions.</li>
+          <li>Created relational schema migrations and index optimization strategies in <strong>PostgreSQL</strong>, speeding up multi-table join reporting queries by <strong>50%</strong>.</li>
+          <li>Packaged multi-service deployments into Docker containers with multi-stage builds, shrinking image sizes by 60% and streamlining CI/CD pipelines.</li>
+        </ul>
+      </div>
+
+      <!-- IT Park -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Junior Software Engineer</span>
+          <span class="exp-date">Mar 2022 — Sep 2023</span>
+        </div>
+        <div class="exp-sub">
+          <span>IT Park / Tech Hub</span>
+          <span class="exp-location">Tashkent, Uzbekistan</span>
+        </div>
+        <ul class="bullets">
+          <li>Implemented RESTful microservice endpoints in Go and integrated PostgreSQL persistence layers using SQL and GORM.</li>
+          <li>Constructed robust unit and integration testing suites utilizing Testify and Mockgen, achieving 80% test coverage on critical business logic.</li>
+          <li>Participated in daily standups, code reviews, and containerized local development environments with Docker Compose.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education & Languages -->
+    <section class="section">
+      <div class="dual-grid">
+        <div>
+          <div class="section-title">Education & Credentials</div>
+          <div class="simple-item">
+            <div class="simple-title">Specialized Secondary / Computer Science Foundations</div>
+            <div>Tashkent, Uzbekistan</div>
+            <div style="color: #64748b; font-size: 8.8pt; margin-top: 2px;">Focus: Distributed Systems, Concurrency & Backend Engineering</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-title">Languages</div>
+          <div class="simple-item">
+            <div><strong>English:</strong> B2 — Upper Intermediate (Professional Working)</div>
+            <div><strong>Uzbek:</strong> Native</div>
+            <div><strong>Russian:</strong> Working Proficiency</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
