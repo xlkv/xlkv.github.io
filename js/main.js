@@ -1,4 +1,4 @@
-// Minimal Controller for xlkv.uz (Azizbek Xoliqov)
+// Minimal Controller for xlkv.me (Azizbek Xoliqov)
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* Theme Handling */
 function initTheme() {
-  const saved = localStorage.getItem('xlkv_theme') || 'light';
+  const saved = localStorage.getItem('xlkv_theme') || 'dark';
   document.documentElement.setAttribute('data-theme', saved);
 
   const btn = document.getElementById('theme-btn');
@@ -22,27 +22,26 @@ function initTheme() {
 
 /* 1-Click Email Copy with Toast */
 let toastTimeout;
-function copyEmail() {
-  const email = 'mail@xlkv.uz';
+function copyEmail(emailAddress = 'azizbek@xlkv.me') {
   if (navigator.clipboard && window.isSecureContext) {
-    navigator.clipboard.writeText(email).then(() => showToast());
+    navigator.clipboard.writeText(emailAddress).then(() => showToast(emailAddress));
   } else {
     const input = document.createElement('textarea');
-    input.value = email;
+    input.value = emailAddress;
     input.style.position = 'fixed';
     input.style.left = '-9999px';
     document.body.appendChild(input);
     input.select();
     document.execCommand('copy');
     document.body.removeChild(input);
-    showToast();
+    showToast(emailAddress);
   }
 }
 
-function showToast() {
+function showToast(emailAddress = 'azizbek@xlkv.me') {
   const toast = document.getElementById('toast');
   if (!toast) return;
-  toast.textContent = 'Copied mail@xlkv.uz to clipboard';
+  toast.textContent = `Copied ${emailAddress} to clipboard`;
   toast.classList.add('show');
   clearTimeout(toastTimeout);
   toastTimeout = setTimeout(() => {
