@@ -43,7 +43,7 @@
         <h1 class="hero-name">Azizbek Xoliqov</h1>
         <div class="role-subtitle">Software Engineer · High-Load Go & Mobile Flutter</div>
         <p class="bio">
-          Software Engineer with <strong>4 years</strong> of experience architecting and delivering high-load distributed systems and cross-platform mobile applications. Currently engineering backend infrastructure supporting <strong>1,500+ RPS</strong> at <strong>OSNOVA</strong> with Go, Redis Stack, and MongoDB change streams.
+          Software Engineer with <strong>4 years</strong> of experience building high-performance cross-platform mobile applications in Flutter and scalable distributed systems in Go. Currently engineering backend infrastructure supporting <strong>1,500+ RPS</strong> at <strong>OSNOVA</strong> with Go, Redis Stack, and MongoDB change streams.
         </p>
 
         <div class="hero-chips">
@@ -85,10 +85,10 @@
           <div class="highlight-card">
             <div class="highlight-header">
               <span class="highlight-title">Enterprise Mobile FinTech & CRM Architecture</span>
-              <span class="highlight-badge">Napa Team</span>
+              <span class="highlight-badge">Mobile Engineering</span>
             </div>
             <p class="highlight-desc">
-              Delivered cross-platform Flutter applications including <strong>NEO Insurance</strong> (remote InsurTech with biometric auth and payment gateways) and <strong>Modme</strong> (real-time CRM with persistent WebSockets and SQLite/Drift offline-first synchronization).
+              Delivered commercial cross-platform Flutter applications including <strong>NEO Insurance</strong> (remote InsurTech with biometric auth and payment gateways), <strong>Modme</strong> (real-time CRM with persistent WebSockets and SQLite/Drift offline-first sync), and <strong>Mom+</strong> (memory and render profiling).
             </p>
           </div>
         </div>
@@ -102,46 +102,93 @@
         </div>
         
         <div class="exp-list">
+          <!-- OSNOVA -->
           <div class="exp-item-block">
             <div class="exp-top-row">
               <div class="exp-company-group">
                 <span class="exp-company">OSNOVA</span>
-                <span class="exp-role-tag">Software Engineer · High-Load & Systems</span>
+                <span class="exp-role-tag">Software Engineer · Backend & High-Load Systems</span>
               </div>
               <span class="exp-year">Jan 2025 — Present</span>
             </div>
             <ul class="exp-bullets">
               <li>Architected and scaled Go backend microservices handling sustained workloads of <strong>1,500+ requests per second</strong>.</li>
-              <li>Engineered <strong>Redis Stack + MongoDB Watcher</strong> pipeline for sub-millisecond query execution.</li>
+              <li>Engineered <strong>Redis Stack + MongoDB Change Streams</strong> pipeline for sub-millisecond query execution.</li>
               <li>Tuned Nginx reverse proxy using upstream keepalive connection pooling and buffered logging.</li>
             </ul>
           </div>
 
+          <!-- Mom+ -->
+          <div class="exp-item-block">
+            <div class="exp-top-row">
+              <div class="exp-company-group">
+                <span class="exp-company">Mom+</span>
+                <span class="exp-role-tag">Software Engineer · Mobile Optimization</span>
+              </div>
+              <span class="exp-year">Aug 2024 — Dec 2024</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Conducted in-depth memory and rendering profiling via Dart DevTools, reducing frame jank by <strong>40%</strong> and RAM footprint by <strong>35%</strong> on budget devices.</li>
+              <li>Refactored state management to Riverpod, eliminating unnecessary widget build cascades.</li>
+            </ul>
+          </div>
+
+          <!-- Napa Team -->
           <div class="exp-item-block">
             <div class="exp-top-row">
               <div class="exp-company-group">
                 <span class="exp-company">Napa Team</span>
-                <span class="exp-role-tag">Software Engineer · Mobile & Client Architecture</span>
+                <span class="exp-role-tag">Software Engineer · Mobile Architecture</span>
               </div>
-              <span class="exp-year">Oct 2023 — Dec 2024</span>
+              <span class="exp-year">Feb 2024 — Jul 2024</span>
             </div>
             <ul class="exp-bullets">
-              <li>Shipped 3 commercial production apps with Flutter & Dart: <strong>NEO Insurance</strong> (FinTech / InsurTech - remote), <strong>Modme</strong> (Real-time CRM & WebSockets), and <strong>Mom+</strong> (Health).</li>
-              <li>Engineered offline-first persistence with SQLite/Drift and streamlined payment gateway integrations (+28% checkout conversion).</li>
-              <li>Reduced UI frame drops and memory usage by 35% on lower-end devices via Dart DevTools profiling.</li>
+              <li>Architected modular Flutter applications adhering to Feature-First Clean Architecture and standardized design systems.</li>
+              <li>Engineered custom platform channels in Kotlin and Swift for hardware camera and background tasks.</li>
             </ul>
           </div>
 
+          <!-- Modme -->
+          <div class="exp-item-block">
+            <div class="exp-top-row">
+              <div class="exp-company-group">
+                <span class="exp-company">Modme</span>
+                <span class="exp-role-tag">Software Engineer · Real-Time Mobile CRM</span>
+              </div>
+              <span class="exp-year">Sep 2023 — Jan 2024</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Built real-time mobile CRM features for educators and students with live messaging and attendance tracking via <strong>WebSockets</strong>.</li>
+              <li>Engineered offline-first persistence with <strong>SQLite/Drift</strong>, enabling uninterrupted workflows during network dropouts.</li>
+            </ul>
+          </div>
+
+          <!-- NEO Insurance -->
+          <div class="exp-item-block">
+            <div class="exp-top-row">
+              <div class="exp-company-group">
+                <span class="exp-company">NEO Insurance</span>
+                <span class="exp-role-tag">Software Engineer · Mobile (Remote)</span>
+              </div>
+              <span class="exp-year">Mar 2023 — Aug 2023</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Shipped high-converting InsurTech mobile app with biometric authentication and payment gateways (Click, Payme, Stripe), lifting conversions by <strong>28%</strong>.</li>
+              <li>Engineered multi-step checkout flows with automated validation and encrypted secure token storage.</li>
+            </ul>
+          </div>
+
+          <!-- IT Park -->
           <div class="exp-item-block">
             <div class="exp-top-row">
               <div class="exp-company-group">
                 <span class="exp-company">IT Park / Tech Hub</span>
-                <span class="exp-role-tag">Associate Software Engineer</span>
+                <span class="exp-role-tag">Software Engineer · Mobile</span>
               </div>
-              <span class="exp-year">Mar 2022 — Sep 2023</span>
+              <span class="exp-year">Mar 2022 — Feb 2023</span>
             </div>
             <ul class="exp-bullets">
-              <li>Developed mobile features and responsive UI for community and social platforms in Flutter.</li>
+              <li>Developed cross-platform mobile features and custom UI components for community and social platforms in Flutter.</li>
               <li>Integrated RESTful APIs with JWT authentication flows and built automated unit/widget test suites (75%+ coverage).</li>
             </ul>
           </div>
