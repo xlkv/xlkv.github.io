@@ -22,7 +22,7 @@ function initTheme() {
 
 /* 1-Click Email Copy with Toast */
 let toastTimeout;
-function copyEmail(emailAddress = 'azizbek@xlkv.me') {
+function copyEmail(emailAddress = 'mail@xlkv.me') {
   if (navigator.clipboard && window.isSecureContext) {
     navigator.clipboard.writeText(emailAddress).then(() => showToast(emailAddress));
   } else {
@@ -38,7 +38,7 @@ function copyEmail(emailAddress = 'azizbek@xlkv.me') {
   }
 }
 
-function showToast(emailAddress = 'azizbek@xlkv.me') {
+function showToast(emailAddress = 'mail@xlkv.me') {
   const toast = document.getElementById('toast');
   if (!toast) return;
   toast.textContent = `Copied ${emailAddress} to clipboard`;

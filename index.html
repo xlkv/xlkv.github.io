@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Azizbek Xoliqov — Software Engineer</title>
   
-  <meta name="description" content="Azizbek Xoliqov (xlkv.me) — Software Engineer specializing in high-concurrency Go backends (1,500+ RPS), scalable Flutter mobile systems, and real-time data synchronization. Email: azizbek@xlkv.me">
+  <meta name="description" content="Azizbek Xoliqov (xlkv.me) — Software Engineer specializing in high-concurrency Go backends (1,500+ RPS), scalable Flutter mobile systems, and real-time data synchronization. Email: mail@xlkv.me">
   <meta name="author" content="Azizbek Xoliqov">
   
   <!-- Minimal Favicon -->
@@ -30,9 +30,9 @@
     <header class="top">
       <nav class="nav-links">
         <a href="#cv" class="nav-link">Resumes</a>
-        <a href="#highlights" class="nav-link">Highlights</a>
         <a href="#experience" class="nav-link">Experience</a>
-        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#highlights" class="nav-link">Highlights</a>
+        <a href="#competencies" class="nav-link">Stack</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
       <button class="theme-btn" id="theme-btn" title="Toggle theme">Theme</button>
@@ -41,128 +41,51 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <div class="status-badge">
-          <span class="status-dot"></span>
-          <span>Open to Opportunities · Remote Worldwide & Relocation</span>
-        </div>
-
         <h1 class="hero-name">Azizbek Xoliqov</h1>
         <div class="role-subtitle">Software Engineer · High-Load Go & Mobile Flutter</div>
         <p class="bio">
           Software Engineer with <strong>4 years</strong> of experience building high-performance cross-platform mobile applications in <strong>Flutter</strong> and scalable distributed systems in <strong>Go (Golang)</strong>. Currently engineering backend infrastructure supporting <strong>1,500+ RPS</strong> at <strong>OSNOVA</strong> with Go, Redis Stack, and MongoDB change streams.
         </p>
 
-        <!-- Quick Stats Bar (Recruiter 6-sec Scan) -->
-        <div class="stats-bar">
-          <div class="stat-item">
-            <span class="stat-num">4 Years</span>
-            <span class="stat-label">Production Exp</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-num">1,500+ RPS</span>
-            <span class="stat-label">Backend Scale</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-num">6+ Products</span>
-            <span class="stat-label">Shipped Live</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-num">English B2</span>
-            <span class="stat-label">Professional</span>
-          </div>
-        </div>
-
-        <div class="hero-chips">
-          <a href="#cv" class="hero-chip primary">📄 Choose Resume (CV) ↓</a>
-          <button class="hero-chip" onclick="copyEmail('azizbek@xlkv.me')">✉️ azizbek@xlkv.me</button>
-          <a href="https://t.me/xalkv" target="_blank" rel="noopener noreferrer" class="hero-chip">✈️ Telegram ↗</a>
-          <a href="https://github.com/xlkv" target="_blank" rel="noopener noreferrer" class="hero-chip">🐙 GitHub ↗</a>
+        <div class="hero-links">
+          <a href="#cv" class="hero-link">Resumes (CV) ↓</a>
+          <button class="hero-link" onclick="copyEmail('mail@xlkv.me')">mail@xlkv.me</button>
+          <a href="https://t.me/xalkv" target="_blank" rel="noopener noreferrer" class="hero-link">Telegram ↗</a>
+          <a href="https://github.com/xlkv" target="_blank" rel="noopener noreferrer" class="hero-link">GitHub ↗</a>
         </div>
       </section>
 
-      <!-- Target Resumes / CV (Placed Prominently for HRs) -->
+      <!-- Resumes (CV) -->
       <section class="section" id="cv">
         <div class="section-head">
-          <span class="section-title">Targeted Resumes (ATS-Compliant)</span>
-          <a href="cv/" class="section-sublink">All CV Formats ↗</a>
+          <span class="section-title">Resumes / Curriculum Vitae</span>
+          <a href="cv/" class="section-sublink">CV Overview ↗</a>
         </div>
 
-        <div class="cv-cards-grid">
-          <!-- Flutter -->
-          <div class="cv-recruiter-card">
-            <div>
-              <div class="cv-recruiter-role">Flutter & Mobile Engineer</div>
-              <div class="cv-recruiter-meta">Cross-Platform · BLoC / Riverpod · Offline-First · FinTech & CRM</div>
+        <div class="cv-rows">
+          <a href="cv/flutter-mobile-engineer.html" class="cv-row">
+            <div class="cv-info">
+              <span class="cv-title">Flutter & Mobile Engineer</span>
+              <span class="cv-desc">Cross-Platform · BLoC / Riverpod · Drift / SQLite Offline-First · FinTech & CRM</span>
             </div>
-            <div class="cv-recruiter-actions">
-              <a href="cv/flutter-mobile-engineer.html" class="cv-recruiter-link">View Resume ↗</a>
-              <span class="cv-recruiter-format">A4 / PDF Ready</span>
-            </div>
-          </div>
+            <span class="cv-action">View CV ↗</span>
+          </a>
 
-          <!-- Golang -->
-          <div class="cv-recruiter-card">
-            <div>
-              <div class="cv-recruiter-role">Golang Backend Engineer</div>
-              <div class="cv-recruiter-meta">1,500+ RPS · Redis Stack · MongoDB Watchers · Systems</div>
+          <a href="cv/golang-backend-engineer.html" class="cv-row">
+            <div class="cv-info">
+              <span class="cv-title">Golang Backend Engineer</span>
+              <span class="cv-desc">1,500+ RPS Microservices · Redis Stack Query Engine · MongoDB Watchers · Systems</span>
             </div>
-            <div class="cv-recruiter-actions">
-              <a href="cv/golang-backend-engineer.html" class="cv-recruiter-link">View Resume ↗</a>
-              <span class="cv-recruiter-format">A4 / PDF Ready</span>
-            </div>
-          </div>
+            <span class="cv-action">View CV ↗</span>
+          </a>
 
-          <!-- Full-Stack -->
-          <div class="cv-recruiter-card">
-            <div>
-              <div class="cv-recruiter-role">Full-Stack Software Engineer</div>
-              <div class="cv-recruiter-meta">Flutter + Go · End-to-End Distributed Architecture</div>
+          <a href="cv/fullstack-software-engineer.html" class="cv-row">
+            <div class="cv-info">
+              <span class="cv-title">Full-Stack Software Engineer</span>
+              <span class="cv-desc">Flutter Clients + Go Backends · End-to-End Distributed Architecture</span>
             </div>
-            <div class="cv-recruiter-actions">
-              <a href="cv/fullstack-software-engineer.html" class="cv-recruiter-link">View Resume ↗</a>
-              <span class="cv-recruiter-format">A4 / PDF Ready</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Engineering Highlights -->
-      <section class="section" id="highlights">
-        <div class="section-head">
-          <span class="section-title">Engineering Highlights</span>
-          <span class="section-sublink">Production Scale & Impact</span>
-        </div>
-        
-        <div class="highlights-list">
-          <div class="highlight-card">
-            <div class="highlight-header">
-              <span class="highlight-title">1,500+ RPS High-Load Synchronization</span>
-              <span class="highlight-badge">OSNOVA</span>
-            </div>
-            <p class="highlight-desc">
-              Engineered a hybrid cache/query architecture on <strong>Redis Stack</strong> synchronized in real-time with <strong>MongoDB</strong> using asynchronous Change Streams (Watchers). Read queries bypass database disks entirely, slashing p99 latency by <strong>65%</strong> under 1,500 RPS traffic surges.
-            </p>
-          </div>
-
-          <div class="highlight-card">
-            <div class="highlight-header">
-              <span class="highlight-title">Nginx Upstream Keepalive & Buffer Optimization</span>
-              <span class="highlight-badge">Infrastructure</span>
-            </div>
-            <p class="highlight-desc">
-              Configured upstream persistent TCP connection pooling in Nginx for backend Go microservices, eliminating TLS/TCP handshake overhead and socket exhaustion. Coupled with buffered access logging to protect disk I/O during peak loads.
-            </p>
-          </div>
-
-          <div class="highlight-card">
-            <div class="highlight-header">
-              <span class="highlight-title">Enterprise Mobile FinTech & CRM Architecture</span>
-              <span class="highlight-badge">Mobile Engineering</span>
-            </div>
-            <p class="highlight-desc">
-              Delivered commercial cross-platform Flutter applications including <strong>NEO Insurance</strong> (remote InsurTech with biometric auth and payment gateways), <strong>Modme</strong> (real-time CRM with persistent WebSockets and SQLite/Drift offline-first sync), and <strong>Mom+</strong> (memory and render profiling).
-            </p>
-          </div>
+            <span class="cv-action">View CV ↗</span>
+          </a>
         </div>
       </section>
 
@@ -175,8 +98,8 @@
         
         <div class="exp-list">
           <!-- OSNOVA -->
-          <div class="exp-item-block">
-            <div class="exp-top-row">
+          <div class="exp-item">
+            <div class="exp-row">
               <div class="exp-company-group">
                 <span class="exp-company">OSNOVA</span>
                 <span class="exp-role-tag">Software Engineer · Backend & High-Load Systems</span>
@@ -191,8 +114,8 @@
           </div>
 
           <!-- Mom+ -->
-          <div class="exp-item-block">
-            <div class="exp-top-row">
+          <div class="exp-item">
+            <div class="exp-row">
               <div class="exp-company-group">
                 <span class="exp-company">Mom+</span>
                 <span class="exp-role-tag">Software Engineer · Mobile Optimization</span>
@@ -206,8 +129,8 @@
           </div>
 
           <!-- Napa Team -->
-          <div class="exp-item-block">
-            <div class="exp-top-row">
+          <div class="exp-item">
+            <div class="exp-row">
               <div class="exp-company-group">
                 <span class="exp-company">Napa Team</span>
                 <span class="exp-role-tag">Software Engineer · Mobile Architecture</span>
@@ -221,8 +144,8 @@
           </div>
 
           <!-- Modme -->
-          <div class="exp-item-block">
-            <div class="exp-top-row">
+          <div class="exp-item">
+            <div class="exp-row">
               <div class="exp-company-group">
                 <span class="exp-company">Modme</span>
                 <span class="exp-role-tag">Software Engineer · Real-Time Mobile CRM</span>
@@ -236,8 +159,8 @@
           </div>
 
           <!-- NEO Insurance -->
-          <div class="exp-item-block">
-            <div class="exp-top-row">
+          <div class="exp-item">
+            <div class="exp-row">
               <div class="exp-company-group">
                 <span class="exp-company">NEO Insurance</span>
                 <span class="exp-role-tag">Software Engineer · Mobile (Remote)</span>
@@ -251,8 +174,8 @@
           </div>
 
           <!-- IT Park -->
-          <div class="exp-item-block">
-            <div class="exp-top-row">
+          <div class="exp-item">
+            <div class="exp-row">
               <div class="exp-company-group">
                 <span class="exp-company">IT Park / Tech Hub</span>
                 <span class="exp-role-tag">Software Engineer · Mobile</span>
@@ -267,91 +190,94 @@
         </div>
       </section>
 
-      <!-- Competencies / Skills (Keyword Matching for Recruiters) -->
-      <section class="section" id="skills">
-        <div class="section-title">Technical Competencies</div>
+      <!-- Engineering Highlights -->
+      <section class="section" id="highlights">
+        <div class="section-head">
+          <span class="section-title">Engineering Highlights</span>
+          <span class="section-sublink">Production Scale</span>
+        </div>
         
-        <div class="skills-container">
-          <div class="skill-category-block">
-            <span class="skill-cat-title">Languages</span>
-            <div class="skill-pills">
-              <span class="skill-pill featured">Go (Golang)</span>
-              <span class="skill-pill featured">Dart</span>
-              <span class="skill-pill">TypeScript</span>
-              <span class="skill-pill">JavaScript</span>
-              <span class="skill-pill">SQL</span>
-              <span class="skill-pill">Bash / Shell</span>
+        <div class="highlights-list">
+          <div class="highlight-item">
+            <div class="highlight-header">
+              <span class="highlight-title">1,500+ RPS High-Load Synchronization</span>
+              <span class="highlight-tag">OSNOVA</span>
             </div>
+            <p class="highlight-desc">
+              Engineered a hybrid cache/query architecture on <strong>Redis Stack</strong> synchronized in real-time with <strong>MongoDB</strong> using asynchronous Change Streams (Watchers). Read queries bypass database disks entirely, slashing p99 latency by <strong>65%</strong> under 1,500 RPS traffic surges.
+            </p>
           </div>
 
-          <div class="skill-category-block">
-            <span class="skill-cat-title">Backend & Systems</span>
-            <div class="skill-pills">
-              <span class="skill-pill featured">1,500+ RPS Architecture</span>
-              <span class="skill-pill featured">Redis Stack (Query Engine)</span>
-              <span class="skill-pill featured">MongoDB (Change Streams)</span>
-              <span class="skill-pill">PostgreSQL</span>
-              <span class="skill-pill">REST APIs</span>
-              <span class="skill-pill">gRPC & Protobuf</span>
-              <span class="skill-pill">WebSockets</span>
-              <span class="skill-pill">Worker Pools</span>
+          <div class="highlight-item">
+            <div class="highlight-header">
+              <span class="highlight-title">Nginx Upstream Keepalive & Buffer Optimization</span>
+              <span class="highlight-tag">Infrastructure</span>
             </div>
+            <p class="highlight-desc">
+              Configured upstream persistent TCP connection pooling in Nginx for backend Go microservices, eliminating TLS/TCP handshake overhead and socket exhaustion. Coupled with buffered access logging to protect disk I/O during peak loads.
+            </p>
           </div>
 
-          <div class="skill-category-block">
-            <span class="skill-cat-title">Mobile Engineering</span>
-            <div class="skill-pills">
-              <span class="skill-pill featured">Flutter</span>
-              <span class="skill-pill">Android SDK</span>
-              <span class="skill-pill">iOS SDK</span>
-              <span class="skill-pill featured">BLoC</span>
-              <span class="skill-pill featured">Riverpod</span>
-              <span class="skill-pill">Offline-First Design</span>
-              <span class="skill-pill">SQLite / Drift</span>
-              <span class="skill-pill">Platform Channels</span>
+          <div class="highlight-item">
+            <div class="highlight-header">
+              <span class="highlight-title">Enterprise Mobile FinTech & CRM Architecture</span>
+              <span class="highlight-tag">Mobile Engineering</span>
             </div>
-          </div>
-
-          <div class="skill-category-block">
-            <span class="skill-cat-title">Ops & Infrastructure</span>
-            <div class="skill-pills">
-              <span class="skill-pill featured">Nginx (Upstream Keepalive)</span>
-              <span class="skill-pill">Docker & Compose</span>
-              <span class="skill-pill">RabbitMQ</span>
-              <span class="skill-pill">Dart DevTools Profiling</span>
-              <span class="skill-pill">Git & GitHub Actions</span>
-              <span class="skill-pill">Linux Administration</span>
-            </div>
+            <p class="highlight-desc">
+              Delivered commercial cross-platform Flutter applications including <strong>NEO Insurance</strong> (remote InsurTech with biometric auth and payment gateways), <strong>Modme</strong> (real-time CRM with persistent WebSockets and SQLite/Drift offline-first sync), and <strong>Mom+</strong> (memory and render profiling).
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- Recruiter Contact Card -->
-      <section class="section" id="contact">
-        <div class="section-title">Get in Touch</div>
+      <!-- Competencies -->
+      <section class="section" id="competencies">
+        <div class="section-title">Competencies</div>
         
-        <div class="recruiter-contact-card">
-          <div class="contact-meta-row">
-            <span class="contact-meta-item">📍 Tashkent, Uzbekistan</span>
-            <span class="contact-meta-item">🌍 Open to Remote (Worldwide) & Relocation</span>
-            <span class="contact-meta-item">🗣️ English (B2 Upper-Intermediate)</span>
-            <span class="contact-meta-item">📞 <a href="tel:+998700100076" style="color: inherit; text-decoration: none;">+998 (70) 0100076</a></span>
+        <div class="stack-rows">
+          <div class="stack-row">
+            <span class="stack-label">Languages</span>
+            <span class="stack-val"><strong>Go (Golang)</strong>, <strong>Dart</strong>, TypeScript, JavaScript, SQL, Bash</span>
           </div>
 
-          <div class="contact-buttons-row">
-            <a href="mailto:azizbek@xlkv.me" class="email-action-btn">
-              ✉️ Send Email (azizbek@xlkv.me)
-            </a>
-            <button class="contact-secondary-btn" onclick="copyEmail('azizbek@xlkv.me')">
-              📋 Copy Email
-            </button>
-            <a href="https://t.me/xalkv" target="_blank" rel="noopener noreferrer" class="contact-secondary-btn">
-              ✈️ Telegram: @xalkv ↗
-            </a>
-            <a href="https://github.com/xlkv" target="_blank" rel="noopener noreferrer" class="contact-secondary-btn">
-              🐙 GitHub: github.com/xlkv ↗
-            </a>
+          <div class="stack-row">
+            <span class="stack-label">Backend</span>
+            <span class="stack-val"><strong>1,500+ RPS Architecture</strong>, Redis Stack (Query Engine), MongoDB (Change Streams), PostgreSQL, REST APIs, gRPC, Protobuf, WebSockets, Worker Pools</span>
           </div>
+
+          <div class="stack-row">
+            <span class="stack-label">Mobile</span>
+            <span class="stack-val"><strong>Flutter</strong>, Android SDK, iOS SDK, BLoC, Riverpod, Offline-First Design, SQLite, Drift, Platform Channels</span>
+          </div>
+
+          <div class="stack-row">
+            <span class="stack-label">Infra & Ops</span>
+            <span class="stack-val">Nginx (Upstream Keepalive & Buffering), Docker, Docker Compose, RabbitMQ, Dart DevTools Profiling, Git, CI/CD, Linux</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="section-title">Contact & Availability</div>
+        
+        <p class="contact-meta">
+          Based in Tashkent, Uzbekistan. Open to full-time remote roles worldwide and relocation opportunities. Fluent in English (B2).
+        </p>
+
+        <div class="contact-links">
+          <button class="contact-link" onclick="copyEmail('mail@xlkv.me')">
+            mail@xlkv.me
+          </button>
+          <a href="https://t.me/xalkv" target="_blank" rel="noopener noreferrer" class="contact-link">
+            Telegram: @xalkv ↗
+          </a>
+          <a href="https://github.com/xlkv" target="_blank" rel="noopener noreferrer" class="contact-link">
+            GitHub: github.com/xlkv ↗
+          </a>
+          <a href="tel:+998700100076" class="contact-link">
+            +998 (70) 0100076
+          </a>
         </div>
       </section>
     </main>
@@ -359,12 +285,12 @@
     <!-- Footer -->
     <footer class="footer">
       <span>© 2026 Azizbek Xoliqov</span>
-      <span><a href="mailto:azizbek@xlkv.me" style="color: inherit; text-decoration: none;">azizbek@xlkv.me</a> · xlkv.me</span>
+      <span><a href="mailto:mail@xlkv.me" style="color: inherit; text-decoration: none;">mail@xlkv.me</a></span>
     </footer>
 
   </div>
 
-  <div class="toast" id="toast">Copied azizbek@xlkv.me to clipboard</div>
+  <div class="toast" id="toast">Copied mail@xlkv.me to clipboard</div>
 
   <script src="js/main.js"></script>
 </body>
